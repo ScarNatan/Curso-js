@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<s>, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+<script>
+    function verificarHora() {
+        var data = new Date();
+        var hora = data.getHours();
+        var res = document.querySelector('div#res');
+        var body = document.body;
+
+        res.innerHTML = `Agora são exatamente ${hora} horas. <br>`;
+        
+        if (hora < 12) {
+            res.innerHTML += 'Bom dia!';
+            body.className = 'claro';
+        } else if (hora < 18) {
+            res.innerHTML += 'Boa tarde!';
+            body.className = 'claro';
+        } else {
+            res.innerHTML += 'Boa noite!';
+            body.className = 'escuro';
+        }
+    }
+</script>
+
+    <h1>Verificador de Hora do Dia</h1>
+    <input type="button" value="Verificar Hora" onclick="verificarHora()">
+    
+    <div id="res"></div>
+
+
+    <footer>@Dev.Natan</footer>
+</body>
+</html>
