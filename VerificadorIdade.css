@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #05c5ff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+
+h1 {
+    color: #000c00;
+    font-size: 36px;
+    margin-bottom: 20px;
+
+}
+
+input[type="button"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ecfced;
+    color: rgb(17, 1, 1);
+    border-radius: 500px;
+    transition: background-color 0.3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);    
+}
+
+div#res {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 675px;
+    font-size: 25px;
+    color: #000000;
+}
+
+input#anoNascimento {
+    font-size: 18px;
+    color: #2c3b94;     
+    background-color: #ecfced;
+    padding: 10px;  
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    border: 2px solid #000000;
+    transition: border-color 0.3s;
+
+}
